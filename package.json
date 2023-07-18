@@ -2,10 +2,13 @@
   "name": "nodejs-homework",
   "version": "0.1.0",
   "description": "The project for preparing NodeJs mentoring program homework",
-  "main": "index.js",
+  "main": "task1.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon"
+    "start": "nodemon",
+    "task1": "nodemon task1.js",
+    "task2": "nodemon task2.js",
+    "task3": "nodemon task3.js"
   },
   "repository": {
     "type": "git",
@@ -19,5 +22,9 @@
   "homepage": "https://github.com/Halning/nodejs-homework#readme",
   "devDependencies": {
     "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "csvtojson": "^2.0.10",
+    "node-fetch": "^3.3.1"
   }
 }
