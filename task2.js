@@ -1,4 +1,4 @@
-import { WithTime } from "./src/WithTime.js";
+import { WithTime } from "./src/event-emiters/WithTime.js";
 import fetch from "node-fetch";
 
 const withTime = new WithTime();
