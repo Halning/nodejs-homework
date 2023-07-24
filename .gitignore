@@ -58,4 +58,3 @@ testem.log
 Thumbs.db
 
 # test results of e2e tests
-playwright/test-results
