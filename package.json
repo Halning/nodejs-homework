@@ -2,13 +2,18 @@
   "name": "nodejs-homework",
   "version": "0.1.0",
   "description": "The project for preparing NodeJs mentoring program homework",
-  "main": "task1.js",
+  "main": "index.js",
   "type": "module",
   "scripts": {
     "start": "nodemon",
-    "task1": "nodemon task1.js",
-    "task2": "nodemon task2.js",
-    "task3": "nodemon task3.js"
+    "module2:task": "nodemon module2-task.js",
+    "module3:task1": "nodemon module3-task1.js",
+    "module3:task2": "nodemon module3-task2.js",
+    "module3:task3": "nodemon module3-task3.js",
+    "test": "jest --config jest.unit.config.js",
+    "test:integration": "jest --config jest.integration.config.js",
+    "test:e2e": "jest --config jest.e2e.config.js",
+    "test:coverage": "jest --config jest.unit.config.js --coverage"
   },
   "repository": {
     "type": "git",
@@ -21,10 +26,20 @@
   },
   "homepage": "https://github.com/Halning/nodejs-homework#readme",
   "devDependencies": {
-    "nodemon": "^3.0.1"
+    "@types/jest": "^29.5.3",
+    "axios": "^1.4.0",
+    "axios-mock-adapter": "^1.21.5",
+    "jest": "^29.6.1",
+    "nodemon": "^3.0.1",
+    "ts-jest": "^29.1.1"
   },
   "dependencies": {
+    "@types/node": "^20.4.4",
+    "@types/supertest": "^2.0.12",
     "csvtojson": "^2.0.10",
-    "node-fetch": "^3.3.1"
+    "node-fetch": "^3.3.1",
+    "supertest": "^6.3.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
   }
 }
