@@ -1,5 +1,5 @@
 import request from 'supertest';
-import {PUBLIC_HOLIDAYS_API_URL} from "../config";
+import {PUBLIC_HOLIDAYS_API_URL} from "../constants/config";
 
 describe('E2E Tests for checkIfTodayIsPublicHoliday', () => {
     it('should return true if today is a public holiday in the specified country', async () => {

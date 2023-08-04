@@ -1,5 +1,5 @@
 import { validateInput, shortenPublicHoliday } from './helpers';
-import {PublicHoliday} from "./types";
+import {PublicHoliday} from "../types/types";
 
 describe('Helpers', () => {
   it('should validate country correctly', () => {
