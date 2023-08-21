@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { getListOfPublicHolidays, getNextPublicHolidays, checkIfTodayIsPublicHoliday } from './public-holidays.service';
-import {shortenPublicHoliday} from '../helpers';
-import {PUBLIC_HOLIDAYS_API_URL} from "../config";
+import {shortenPublicHoliday} from '../utils/helpers';
+import {PUBLIC_HOLIDAYS_API_URL} from "../constants/config";
 
 jest.mock('axios'); // Mock axios
 

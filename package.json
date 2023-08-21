@@ -3,13 +3,14 @@
   "version": "0.1.0",
   "description": "The project for preparing NodeJs mentoring program homework",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "start": "nodemon",
+    "build": "tsc",
     "module2:task": "nodemon module2-task.js",
     "module3:task1": "nodemon module3-task1.js",
     "module3:task2": "nodemon module3-task2.js",
     "module3:task3": "nodemon module3-task3.js",
+    "module4:http": "ts-node src/server.ts",
     "test": "jest --config jest.unit.config.js",
     "test:integration": "jest --config jest.integration.config.js",
     "test:e2e": "jest --config jest.e2e.config.js",
@@ -34,6 +35,7 @@
     "ts-jest": "^29.1.1"
   },
   "dependencies": {
+    "@types/axios": "^0.14.0",
     "@types/node": "^20.4.4",
     "@types/supertest": "^2.0.12",
     "csvtojson": "^2.0.10",

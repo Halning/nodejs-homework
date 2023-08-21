@@ -5,7 +5,7 @@ import {
     checkIfTodayIsPublicHoliday,
     getNextPublicHolidays,
 } from './public-holidays.service';
-import {PUBLIC_HOLIDAYS_API_URL} from "../config";
+import {PUBLIC_HOLIDAYS_API_URL} from "../constants/config";
 
 const mockAxios = new MockAdapter(axios);
 
